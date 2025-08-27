@@ -1,8 +1,14 @@
+NAME = libftprintf.a
 
-NAME		= libftprintf.a
-SRCS		= ft_printf.c
-OBJS		= ${SRCS:.c=.o}
-CFLAGS		= 
+INCLUDES = .
+
+SRCS = ft_printf.c \
+	ft_putchar.c \
+	ft_putstr.c \
+	ft_putnbr.c
+
+OBJS = ${SRCS:.c=.o}
+CFLAGS = -Wall -Wextra -Werror -I $(INCLUDES) 
 
 all:		${NAME}
 
