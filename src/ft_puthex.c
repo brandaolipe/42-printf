@@ -6,15 +6,15 @@
 /*   By: febranda <febranda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/28 16:47:08 by febranda          #+#    #+#             */
-/*   Updated: 2025/08/28 20:47:44 by febranda         ###   ########.fr       */
+/*   Updated: 2025/08/29 17:21:10 by febranda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_puthex(unsigned int nb, char specifier)
+int	ft_puthex(unsigned long int nb, char specifier)
 {
-	int	count;
+	int		count;
 	char	*basehex;
 
 	count = 0;
@@ -33,5 +33,3 @@ int	ft_puthex(unsigned int nb, char specifier)
 	}
 	return (count);
 }
-
-//012345
